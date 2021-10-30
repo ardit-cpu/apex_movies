@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="file.css">
+<title>My Profile</title>
+<link rel="icon" href="logo.jpg">
+<html>
+    <div class="file">
+    <img src="dd_files/ar.jpg" alt="">
+    <h1>Ardit Berisha</h1>
+    <div class="btn">
+        <button onclick="sc()">Security</button>
+        <button onclick="tr()">Trial</button>
+        <button onclick="mw()">Watched MW</button>
+        <button onclick="st()">Setings</button>
+        <a href="profile.html"><button>Go home</button></a>
+        <a href="main.html"><button>Sign out</button></a>
+    </div>
+    <div id="sec" style="visibility: hidden;">
+   <h2>Email</h2> <input type="email" placeholder="arditberisha8080@gamail.com">
+   <h2>Username</h2>  <input type="username" placeholder="Ardit:8080">
+   <h2>Password</h2>  <input type="pasword" placeholder="yourpasword"><button style="
+   right: 210px;
+   top: 5cm;
+   position: absolute;">Change</button>
+    <button>My History</button><button>Clear</button>
+    <button onclick="dl()">X</button>
+    </div>
+    <div id="trial">
+
+        <h1>Free Trial</h1>
+        <button onclick="cl()">X</button>
+    </div>
+    <div id="mw"><h1>No watched movies</h1>
+    <button onclick="ex()">X</button>
+    </div>
+</div>
+    <script>
+        function sc(){
+            var l = document.getElementById('sec')
+            l.style.visibility = "visible"
+            
+        }
+        function tr(){
+            var x = document.getElementById('trial')
+            x.style.visibility = "visible"
+        }
+        function mw(){
+            var x = document.getElementById('mw');
+            x.style.visibility = "visible"
+        }
+        function cl(){
+            var x = document.getElementById('trial');
+            x.style.visibility = "hidden"
+        }
+        function dl(){
+            var l = document.getElementById('sec')
+            l.style.visibility = "hidden"
+        }
+        function ex(){
+            var x = document.getElementById('mw');
+            x.style.visibility = "hidden"
+        }
+    </script>
+</html>

@@ -1,0 +1,85 @@
+.file{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 23.4cm;
+    color: white;
+    width: 10cm;
+    background: black;
+
+}
+html{
+    overflow: hidden;
+    background-image: url(dp.jpg);
+    background-size: cover;
+}
+.file img{
+    text-align: center;
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 5cm;
+}
+.file h1{
+    position: absolute;
+    top:5cm;
+    left: 65px;
+}
+
+.file .btn{
+    display: grid;
+    width: 7cm;
+    margin-left: 50px;
+    margin-top: 10cm;
+}
+.btn button{
+    margin-top: 30px;
+    width: 7cm;
+    height: 40px;
+
+    background: linear-gradient(to right, #ffcda5, #ffa62e);
+    border: thick;
+}
+#trial{
+    top: 6cm;
+    left: 450px;
+    width: 19cm;
+    position: absolute;
+    height: 10cm;
+    color: red;
+    background: linear-gradient(to left, #ff4892, #73ff66);
+    visibility: hidden;
+}
+#mw{
+    top: 6cm;
+    left: 450px;
+    width: 19cm;
+    position: absolute;
+    height: 10cm;
+    color: red;
+    background: linear-gradient(to left, #ff4892, #73ff66);
+    visibility: hidden;
+}
+#sec{
+    top: 6cm;
+    left: 450px;
+    width: 19cm;
+    position: absolute;
+    height: 10cm;
+    color: red;
+    background: linear-gradient(to left, #ff4892, #73ff66);
+}
+#sec input{
+    display: grid;
+    margin-bottom: 50px;
+    width: 6cm;
+    height: 40px;
+    position: relative;
+    left: 180px;
+}
+#sec h2{
+margin-top: 5px;
+    position: absolute;
+}

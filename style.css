@@ -1,0 +1,120 @@
+html{
+    background: linear-gradient(to left top, #3499ff, #3a3985);
+}
+.start{
+    height: 4cm;
+    width: 16cm;
+    text-align: center;
+    border: 5px solid #7366ff;
+    font-weight: 100;
+    position: absolute;
+    left: 8cm;
+    top: 5cm;
+}
+
+.start h1{
+    font-size: 60px;
+    color: rgb(12, 177, 177);
+}
+
+.load{
+    position: absolute;
+    left: 8.5cm;
+    top: 15cm;
+    border-radius: 35px;
+    width: 15cm;
+    height: 35px;
+    background: rebeccapurple;
+}
+.loader{
+    width: 0px;
+    height: 35px;
+    border-radius: 35px;
+    animation: 5s ding;
+}
+
+@keyframes ding{
+    from{width: 0px; background: #ffa62e;}
+    to{width: 15cm; background: #8a64eb;}
+}
+
+.top{
+    user-select: none;
+    position: relative;
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .top button{
+      float:right;
+      position: relative;
+      top: -50px;
+      margin-left: 20px;
+      width: 4cm;
+      height: 35px;
+      outline: none;
+      left: -50px;
+      background: #7366FF;
+      border: thick;
+      cursor: pointer;
+  }
+  .top button:hover{
+      background: chartreuse;
+  }
+  .re{
+      text-align: center;
+      margin-top: 50px;
+      font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  }
+
+  .re h1{
+      font-size: 90px;
+  }
+  .re h3{
+      font-size: 40px;
+  }
+  .re input{
+      width: 15cm;
+      height: 50px;
+      border: thick;
+      outline: none ;
+  }
+  .re button{
+      width: 3cm;
+      border: thick;
+      height: 50px;
+      background: red;
+  }.re button:hover{
+    width: 3cm;
+    border: thick;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+  footer img{
+width: 5cm;
+position: relative;
+left: 210px;
+top: 1cm;
+height: 8cm;
+margin-left: 50px;
+  }
+  footer img:hover{
+      transition: 0.5s;
+      transform: scale(1.2);
+      box-shadow: 0 0 10px 5px black;
+  }
+
+  #serd{
+      visibility: hidden;
+      position: absolute;
+      top: 2cm;
+      background: black;
+      color: white;
+      right: 5.8cm;
+  }
+  #serd.svd{
+      visibility: visible;
+  }

@@ -1,0 +1,110 @@
+<title>demo</title>
+<link rel="icon" href="logo.jpg">
+<html>
+    <div class="log">
+        <form name="los" onsubmit="return ret()">
+        <input type="text" placeholder="Username" name="use">
+        <input type="password" placeholder="Password" name="pas">
+        <button value="user">Log in As Guest</button>
+        </form>        
+        <h1 id="type" style="position: absolute;
+        bottom: 0px;
+        left: 90px;
+        
+        "></h1>
+    <input type="checkbox" style="width: 19px; outline: none;
+    position: absolute;
+    top: 8cm;
+    left: 10px;
+    "> <p 
+    style="position: absolute;
+    top: 7.7cm;
+    left: 50px;
+    "
+    >Do you Agree with our terms</p>    
+    </div>
+    <div class="users">
+        <h1>Credentalis for Demo Version</h1>
+        <p>Username: apex</p>
+        <p>password: film</p>
+    </div>
+</html>
+
+<script>
+    function ret(){
+        var x = document.forms['los']['use'].value
+        var l = document.forms['los']['pas'].value
+
+        if(x == "apex"){
+           window.location = "un.html"
+            return false;
+        }
+        if(l == "film"){
+            window.location = "un.html"
+
+            return false;
+        }
+        else{
+            document.getElementById('type').innerHTML = "Wrong Username Or Password"
+        return false;  
+        }
+        if(x == ""|| x == null){
+        document.getElementById('type').innerHTML = "Please Fill out"
+        return false;
+    }
+    }
+   
+</script>
+
+<style>
+    html{
+        background-image: url(dp.jpg);
+        background-size: cover;
+    }
+    .users{
+        position: absolute;
+        bottom: 0px;
+        left: 13.5cm;
+        border-radius: 10px;
+        width: 5cm;
+        width: 5cm;
+        background: black;
+        color: white;
+    }
+    .users h1{
+        font-size:  20px;
+    }
+    .log{
+        position: absolute;
+        width: 10cm;
+        height: 14cm;
+        background: linear-gradient(to left top, #b65eba, #2e8de1);
+        left: 11cm;
+        top: 4cm;
+        border: 1px solid lime;
+    }
+    .log input{
+        width: 7cm;
+        height: 37px;
+        margin-bottom: 15px;
+        position: relative;
+        left: 55px;
+        top: 2cm;
+        background: linear-gradient(to left,#ff9482, #7d77ff);
+        border: 1px solid black;
+    }
+    .log input::placeholder{
+        color: black;
+    }
+    .log button{
+        position: absolute;
+        bottom: 7cm;
+        left: 3cm;
+        background: #f650a0;
+        border: 1px solid black;
+        width: 4cm;
+        height: 35px;
+        cursor: pointer;
+    }
+
+</style>
