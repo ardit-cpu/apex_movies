@@ -24,9 +24,9 @@
 </main>
 
 <footer>
-<img src="sqd.jpg" alt="">
-<img src="spd.jpg" alt="">
-<img src="whm.jpg" alt="">
+<img src="https://apexmw.netlify.app/spd.jpg" alt="">
+<img src="https://apexmw.netlify.app/sqd.jpg" alt="">
+<img src="https://apexmw.netlify.app/whm.jpg" alt="">
 </footer>
 
 <script>
